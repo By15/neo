@@ -1,0 +1,4 @@
+# Project exclude paths
+/by15-demoConsumer/target/
+/by15-springeureka/target/
+/by15-User/target/

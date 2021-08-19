@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/By15.iml" filepath="$PROJECT_DIR$/By15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/by15-User/by15-User.iml" filepath="$PROJECT_DIR$/by15-User/by15-User.iml" />
+      <module fileurl="file://$PROJECT_DIR$/by15-demoConsumer/by15-demoConsumer.iml" filepath="$PROJECT_DIR$/by15-demoConsumer/by15-demoConsumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/by15-springeureka/by15-springeureka.iml" filepath="$PROJECT_DIR$/by15-springeureka/by15-springeureka.iml" />
+    </modules>
+  </component>
+</project>
