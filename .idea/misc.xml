@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/by15-User/pom.xml" />
         <option value="$PROJECT_DIR$/by15-springeureka/pom.xml" />
         <option value="$PROJECT_DIR$/by15-demoConsumer/pom.xml" />
+        <option value="$PROJECT_DIR$/by15-gateway/pom.xml" />
       </list>
     </option>
   </component>
