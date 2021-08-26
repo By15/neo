@@ -3,11 +3,11 @@ server:
 
 spring:
   application:
-    name: cloud-gateway
+    name: by15-Gateway
   cloud:
     gateway:
       routes:
-        - id: eureka-service # 路由的id,没有规定规则但要求唯一,建议配合服务名
+        - id: by15-User # 路由的id,没有规定规则但要求唯一,建议配合服务名
           #匹配后提供服务的路由地址
           uri: http://localhost:8701
           predicates:

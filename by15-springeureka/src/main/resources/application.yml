@@ -14,4 +14,4 @@ eureka:
 #指定应用名称
 spring:
   application:
-    name: eureka-server
+    name: by15-eureka

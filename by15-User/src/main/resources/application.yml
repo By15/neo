@@ -13,4 +13,4 @@ eureka:
 #当前服务名称
 spring:
   application:
-    name: eureka-service
+    name: by15-User
