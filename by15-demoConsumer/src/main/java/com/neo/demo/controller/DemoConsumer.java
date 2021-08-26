@@ -13,11 +13,11 @@ public class DemoConsumer {
     RestTemplate restTemplate;
 
     @RequestMapping("/hello")
-    public String helloWorld(String s){
-        System.out.println("传入的值为："+s);
+    public String helloWorld(){
+        System.out.println("传入的值为："+1);
 
         //第三种调用方式 需要restTemplate注入的方式
-        String forObject = restTemplate.getForObject("http://eureka-service/hello/World?s=" + s, String.class);
+        String forObject = restTemplate.getForObject("http://by15-User/hello/World", String.class);
         return forObject;
     }
 

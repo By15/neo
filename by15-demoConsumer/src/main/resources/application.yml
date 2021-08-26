@@ -6,11 +6,11 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:8700/eureka
+      defaultZone: http://localhost:8700/eureka
   instance:
     hostname: localhost
 
 #当前服务名称
 spring:
   application:
-    name: eureka-consumer
+    name: by15-consumer
