@@ -11,10 +11,10 @@ spring:
           #匹配后提供服务的路由地址
           uri: http://localhost:8701
           predicates:
-            - Path=/hello/World/** # 断言，路径相匹配的进行路由
+            - Path=/hello/World?** # 断言，路径相匹配的进行路由
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8700/eureka
+      defaultZone: http://localhost:8081/eureka
   instance:
     hostname: localhost

@@ -21,7 +21,10 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="by15-springeureka" options="" />
+      <module name="by15-User" options="-parameters" />
+      <module name="by15-demoConsumer" options="-parameters" />
+      <module name="by15-gateway" options="-parameters" />
+      <module name="by15-springeureka" options="-parameters" />
     </option>
   </component>
 </project>
