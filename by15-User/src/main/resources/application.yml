@@ -1,7 +1,13 @@
-
+spring:
+  application:
+    name: by15-User
 server:
   port: 8701 # 服务提供方
-
+  dataSource:
+    driverClassName:
+    url:
+    username:
+    password:
 # 指定当前eureka客户端的注册地址,
 eureka:
   client:
@@ -9,8 +15,3 @@ eureka:
       defaultZone: http://localhost:8081/eureka
   instance:
     hostname: localhost
-
-#当前服务名称
-spring:
-  application:
-    name: by15-User
