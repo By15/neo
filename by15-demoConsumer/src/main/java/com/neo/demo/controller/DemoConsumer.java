@@ -20,7 +20,7 @@ public class DemoConsumer {
         System.out.println("传入的值为："+s);
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        ResponseEntity<String> exchange = restTemplate.exchange("http://127.0.0.1:8701/hello/World?s=" + s, HttpMethod.GET, new HttpEntity<>(headers), String.class);
+        ResponseEntity<String> exchange = restTemplate.exchange("http://by15-User:8701/hello/World?s=" + s, HttpMethod.GET, new HttpEntity<>(headers), String.class);
         return exchange.getBody();
     }
 
