@@ -4,10 +4,10 @@ spring:
 server:
   port: 8701 # 服务提供方
   dataSource:
-    driverClassName:
-    url:
-    username:
-    password:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mysql
+    username: root
+    password: root
 # 指定当前eureka客户端的注册地址,
 eureka:
   client:
