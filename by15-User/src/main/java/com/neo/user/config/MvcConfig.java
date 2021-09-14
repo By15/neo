@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.neo.user.bind.PrimaryDataSource;
+import org.springframework.context.annotation.Primary;
 
 /**
  * @author By15
@@ -20,6 +21,7 @@ public class MvcConfig {
     PrimaryDataSource primaryDataSource;
 
     @Bean
+    @Primary
     public DataSource mainDataSource() {
         return DataSourceBuilder.create()
                 .driverClassName("")
