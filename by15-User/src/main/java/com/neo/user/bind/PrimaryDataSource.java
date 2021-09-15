@@ -1,16 +1,15 @@
 package com.neo.user.bind;
 
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
-
 import lombok.Data;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
 /**
  * @author By15
  * @since 2021/9/9 17:10
  */
-@ConfigurationProperties(prefix = "spring.dataSource")
-@Configuration
+@ConfigurationProperties(prefix = "server.datasource")
+@Component
 @Data
 public class PrimaryDataSource {
     private String driverClassName;
@@ -20,6 +19,4 @@ public class PrimaryDataSource {
     private String username;
 
     private String password;
-
-    private String type;
 }

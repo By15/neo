@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neo.user.mapper.UserBaseInfoMapper">
+    <insert id="insertBatch" parameterType="com.neo.user.entity.UserBaseInfoEntity">
+        <foreach collection="users" item="item">
+            insert into user_base_info_t(id,
+            user_name,
+            user_id,
+            age,
+            tel_phone,
+            address,
+            sex,
+            create_time,
+            update_time,
+            is_Delete)VALUES (
+            #{item.id},
+            #{item.userName},
+            #{item.userId},
+            #{item.age},
+            #{item.telPhone},
+            #{item.address},
+            #{item.sex},
+            current_date,
+            current_date,
+            #{item.isDelete}
+            );
+        </foreach>
+    </insert>
+</mapper>

@@ -3,9 +3,9 @@ spring:
     name: by15-User
 server:
   port: 8701 # 服务提供方
-  dataSource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/mysql
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/user_info?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
     username: root
     password: root
 # 指定当前eureka客户端的注册地址,

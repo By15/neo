@@ -57,7 +57,7 @@ public class UserBaseInfoEntity {
 	@ApiModelProperty("修改时间")
 	private Date updateTime;
 
-	@TableField(value = "isDelete")
+	@TableField(value = "is_Delete")
 	@ApiModelProperty("是否删除")
 	private String isDelete;
 }

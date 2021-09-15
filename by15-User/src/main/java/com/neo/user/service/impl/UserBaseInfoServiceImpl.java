@@ -5,7 +5,9 @@ import com.neo.user.mapper.UserBaseInfoMapper;
 import com.neo.user.service.IUserBaseInfoService;
 import com.neo.user.util.CommonUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -13,6 +15,8 @@ import java.util.List;
  * @author By15
  * @date 2021/9/14 14:24
  */
+@Slf4j
+@Service
 public class UserBaseInfoServiceImpl implements IUserBaseInfoService {
 
 	@Autowired
@@ -23,7 +27,11 @@ public class UserBaseInfoServiceImpl implements IUserBaseInfoService {
 	 */
 	@Override
 	public void saveUsers(List<UserBaseInfoEntity> users) {
-		users.forEach(item -> item.setUserId(CommonUtil.getUUID()));
-		QueryWrapper<UserBaseInfoEntity> queryWrapper = new QueryWrapper();
+		QueryWrapper<UserBaseInfoEntity> wrapper = new QueryWrapper<>();
+		userBaseInfoMapper.selectList(wrapper);
+		users.forEach(item -> {item.setUserId(CommonUtil.getUUID());
+		item.setId(CommonUtil.getUUIDBits(16));});
+		//QueryWrapper<UserBaseInfoEntity> queryWrapper = new QueryWrapper();
+		userBaseInfoMapper.insertBatch(users);
 	}
 }
