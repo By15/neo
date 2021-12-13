@@ -4,14 +4,14 @@ spring:
 server:
   port: 8701 # 服务提供方
   datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://111.67.203.92:3306/mysql
-    username: root
-    password: By15Kgxm
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@db202111161439_medium?TNS_ADMIN=C:\Program Files\Study\By15\Wallet
+    username: admin
+    password: By15KgxmLiuChong
 # 指定当前eureka客户端的注册地址,
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://111.67.203.92:8081/eureka
+      defaultZone: http://129.158.37.135:8081/eureka
   instance:
     hostname: localhost

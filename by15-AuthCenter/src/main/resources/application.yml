@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: by15-AuthCenter
+server:
+  port: 8703 # 服务提供方
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://111.67.203.92:3306/mysql
+    username: root
+    password: By15Kgxm
+# 指定当前eureka客户端的注册地址,
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://111.67.203.92:8081/eureka
+  instance:
+    hostname: localhost

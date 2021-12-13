@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
  * @author By15
  * @date 2021/11/24 13:38
  */
-@FeignClient(name = "base-auth")
+@FeignClient(name = "auth_center")
 public interface AuthClient {
 
     /**

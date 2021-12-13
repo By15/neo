@@ -9,20 +9,25 @@
         <outputRelativeToContentRoot value="true" />
         <module name="by15-User" />
         <module name="by15-gateway" />
+        <module name="by15-AuthCenter" />
         <module name="by15-demoConsumer" />
         <module name="by15-springeureka" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="by15-AuthCenter" target="1.8" />
       <module name="by15-demoConsumer" target="1.8" />
       <module name="by15-gateway" target="1.8" />
       <module name="by15-springeureka" target="1.8" />
       <module name="by15-User" target="1.8" />
+      <module name="by15-User (1)" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="by15-AuthCenter" options="-parameters" />
       <module name="by15-User" options="-parameters" />
+      <module name="by15-User (1)" options="-parameters" />
       <module name="by15-demoConsumer" options="-parameters" />
       <module name="by15-gateway" options="-parameters" />
       <module name="by15-springeureka" options="-parameters" />
