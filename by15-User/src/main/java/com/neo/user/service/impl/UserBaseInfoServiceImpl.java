@@ -27,11 +27,18 @@ public class UserBaseInfoServiceImpl implements IUserBaseInfoService {
 	 */
 	@Override
 	public void saveUsers(List<UserBaseInfoEntity> users) {
-		QueryWrapper<UserBaseInfoEntity> wrapper = new QueryWrapper<>();
-		userBaseInfoMapper.selectList(wrapper);
 		users.forEach(item -> {item.setUserId(CommonUtil.getUUID());
 		item.setId(CommonUtil.getUUIDBits(16));});
-		//QueryWrapper<UserBaseInfoEntity> queryWrapper = new QueryWrapper();
 		userBaseInfoMapper.insertBatch(users);
+	}
+
+	/**
+	 * 查询用户信息
+	 *
+	 * @param users users
+	 */
+	@Override
+	public List<UserBaseInfoEntity> queryUserInfo(UserBaseInfoEntity users) {
+		return userBaseInfoMapper.selectList(new QueryWrapper<>());
 	}
 }

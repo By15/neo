@@ -15,4 +15,10 @@ public interface IUserBaseInfoService {
 	 * @param users users
 	 */
 	void saveUsers(List<UserBaseInfoEntity> users);
+
+	/**
+	 * 查询用户信息
+	 * @param users users
+	 */
+	List<UserBaseInfoEntity> queryUserInfo(UserBaseInfoEntity users);
 }

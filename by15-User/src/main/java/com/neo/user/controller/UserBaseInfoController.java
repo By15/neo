@@ -31,4 +31,10 @@ public class UserBaseInfoController {
 		userBaseInfoService.saveUsers(users);
 		return Response.sucess(null);
 	}
+
+	@PostMapping("queryUserInfo")
+	@ApiOperation("查询用户信息")
+	public Response queryUserInfo(@RequestBody UserBaseInfoEntity users){
+		return Response.sucess(userBaseInfoService.queryUserInfo(users));
+	}
 }

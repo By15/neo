@@ -5,7 +5,8 @@ server:
   port: 8701 # 服务提供方
   datasource:
     driver-class-name: oracle.jdbc.OracleDriver
-    url: jdbc:oracle:thin:@db202111161439_medium?TNS_ADMIN=C:\Program Files\Study\By15\Wallet
+    url: jdbc:oracle:thin:@db202111161439_medium?TNS_ADMIN=C:/Users/18507/Downloads/WINDOWS.X64_193000_db_home/network/admin/Wallet
+    validationQuery: select 1 from dual
     username: admin
     password: By15KgxmLiuChong
 # 指定当前eureka客户端的注册地址,
